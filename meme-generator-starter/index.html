@@ -14,13 +14,22 @@
     <body>
         <h1>Meme Generator</h1>
         <div id="image-url-input" class="inputs">
-            <input id="image-url" type="text" placeholder="https://shecodes.com.au/wp-content/uploads/2022/02/SheCodes-135-600x400.jpeg" />
+            <input id="image-url" type="text" />
             <input type="button" value="Submit" onclick="getImage()"/>
         </div>
+        <div id="top-text-wrapper" class="inputs">    
+            <input id="top-text-input" type="text" />    
+            <input type="button" value="Submit" onclick="addTopText()"/>
+        </div>
+        <div id="bottom-text-wrapper" class="inputs">    
+            <input id="bottom-text-input" type="text" />    
+            <input type="button" value="Submit" onclick="addBottomText()"/>
+        </div>
         <div id="meme-builder">
-            <div id="meme-image-wrapper"></div>
-            <div id="top-text-wrapper" class="inputs"></div>
-            <div id="bottom-text-wrapper" class="inputs"></div>
+            <div id="meme-image-wrapper">          
+                <h2 id="top-text"></h2>
+                <h2 id="bottom-text"></h2> 
+            </div> 
         </div>
 
         <script src="script.js"></script>
